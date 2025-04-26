@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - e aí
+    - fala aí
+
+- intent: agendar_reuniao
+  examples: |
+    - quero marcar uma reunião
+    - agenda um horário
+    - podemos marcar uma call?
+
+- intent: despedida
+  examples: |
+    - tchau
+    - até mais
+    - falou
+    - até logo
+    - vou nessa
+    - até a próxima
+
+- intent: agradecer
+  examples: |
+    - obrigado
+    - valeu
+    - agradeço
+    - muito obrigado
+
+- intent: fornecer_assunto
+  examples: |
+    - sobre [seminário de embarcados](assunto)
+    - assunto é [orçamento anual](assunto)
+    - [reunião de equipe](assunto)
+    - [apresentação comercial](assunto)
+    - [reunião de negócios](assunto)
+    - [apresentação de produtos](assunto)
+    - [reunião geral](assunto)
+    - [reunião de gerentes](assunto)
+    - [apresentação de resultados](assunto)

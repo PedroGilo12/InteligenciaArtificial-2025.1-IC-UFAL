@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+- rule: Responder à saudação
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+
+- rule: Responder à despedida
+  steps:
+    - intent: despedida
+    - action: utter_despedida
+
+- rule: Responder ao agradecimento
+  steps:
+    - intent: agradecer
+    - action: utter_agradecer
+
+- rule: Iniciar agendamento
+  steps:
+    - intent: agendar_reuniao
+    - action: utter_perguntar_assunto
+
+- rule: Confirmar assunto
+  steps:
+    - intent: fornecer_assunto
+    - action: utter_confirmar_assunto

@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+- story: Saudação e despedida
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: despedida
+    - action: utter_despedida
+
+- story: Saudação e marcar reuniao
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: agendar_reuniao
+    - action: utter_perguntar_assunto
+
+- story: Coletar assunto da reunião
+  steps:
+    - intent: agendar_reuniao
+    - action: utter_perguntar_assunto
+    - intent: fornecer_assunto
+      entities:
+        - assunto: "seminário de embarcados"
+    - slot_was_set:
+        - assunto: "seminário de embarcados"
+    - action: utter_confirmar_assunto

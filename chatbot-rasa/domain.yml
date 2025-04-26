@@ -1,0 +1,45 @@
+version: "3.1"
+
+entities:
+  - assunto
+
+slots:
+  assunto:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: assunto
+
+intents:
+  - saudacao
+  - despedida
+  - agradecer
+  - agendar_reuniao
+  - fornecer_assunto
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso te ajudar hoje?"
+
+  utter_despedida:
+    - text: "Até logo! Se cuida."
+
+  utter_agradecer:
+    - text: "De nada! 😊"
+
+  utter_perguntar_assunto:
+    - text: "Sobre qual assunto será a reunião?"
+
+  utter_confirmar_assunto:
+    - text: "Entendido! O assunto será '{assunto}'. Posso confirmar o agendamento?"
+
+actions:
+  - utter_saudacao
+  - utter_despedida
+  - utter_agradecer
+  - utter_perguntar_assunto
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
