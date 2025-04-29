@@ -1,0 +1,9 @@
+
+Clique [Joined To]  Size   Member nodes (* means home)
+ 0  [1]               16  (Gripe, Pneumonia, COVID19, *Tosse)
+ 1  [0 2 3]           16  (*Febre, Gripe, Pneumonia, COVID19)
+ 2  [1]                8  (*FaltaDeAr, *Pneumonia, *COVID19)
+ 3  [1 4]              8  (*Fadiga, *Gripe, COVID19)
+ 4  [3]                8  (*DorDeGarganta, Gripe, COVID19)
+Sum of clique sizes = 56  (with sepsets = 76)
+
